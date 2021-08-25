@@ -14,17 +14,7 @@ class CreateStaffTable extends Migration
     public function up()
     {
         Schema::create('staff', function (Blueprint $table) {
-            $table->id()->length('10');
-            $table->string('fname',50);
-            $table->string('mname',50)->nullable();
-            $table->string('sname',50); 
-            $table->date('dob')->nullable();
-            $table->integer('current_branch')->length('11')->default('1');
-            $table->integer('current_staff_cat')->length('11')->nullable();
-            $table->integer('current_position')->length('11')->default('6');
-            $table->integer('current_department')->length('11')->nullable();
-            $table->integer('companyid')->length('11')->default('1'); 
-            $table->integer('current_supervisor')->length('11')->nullable(); 
+            
             $table->date('soa')->nullable();
             $table->date('eoa')->nullable(); 
             $table->date('dofa')->nullable(); 
